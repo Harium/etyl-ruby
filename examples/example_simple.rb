@@ -1,26 +1,4 @@
-# etyl-ruby
-Etyl in a JRuby suit
-
-
-### Installing jbundler
-```
-  jruby -S gem install jbundler
-```
-
-
-### Install jar dependencies
-```
-  jruby -S jbundle install
-```
-
-### Start application
-```
-  jruby init.rb
-```
-### Minimal Working Example
-```
-# main.rb
-require_relative 'etyl.rb'
+require_relative '../etyl.rb'
 
 java_import 'com.harium.etyl.Etyl'
 java_import 'com.harium.etyl.commons.graphics.Color'
@@ -52,9 +30,3 @@ end
 # Starting Main
 opening = Main.new
 opening.init
-```
-
-Run the example with
-```
-  jruby main.rb
-```
